@@ -1,12 +1,36 @@
 # School: Higher  school of technology-Méknes
 Name: MOHAMED_LAKHAL
+
+
 Sector: Web development
+
+
 
 General introduction:
 Dear reader, I hope you are well. In this report
 I will explain the role of this program, which is a student manager where professors can save allot of time when they use this program who calculate average by details for each student and he decide after that  if the student is PASS or FAIL as-well this program  give professors opportunity to save they students data(information) or if they have already a file contain students data they can upload it on the program and keeping working on .
 
-NOTE: this program was programmed by PYTHON language and that after 10 days of studying this lang, but with professor H. BENNIS efforts in basics of C language the problems I faced were at the level.      
+NOTE: this program was programmed by PYTHON language and that after 10 days of studying this lang, but with professor H. BENNIS efforts in basics of C language the problems I faced were at the level. 
+
+
+
+Technology's:
+
+> LOOPS
+
+> Conditional  statements
+
+> Functions
+
+> parallel lists
+ _________________________________________________ 
+ 
+ Built with:
+ > Python 🐍
+
+ . < os > (for file search)
+ 
+ . < time > (for the time exact)
 
 
  STUDENTGRADE MANAGER
