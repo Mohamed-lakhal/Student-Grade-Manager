@@ -17,7 +17,7 @@ def MENU():
     print ("[5] STUDENTS STATISTICS")
     print ("[6] FIND TOP STUDENT ")
     print ("[7] SAVE_FILE ")
-    print ("[8]LOAD_FILE")
+    print ("[8] LOAD_FILE")
     print ("[0] EXIT ")
     print ("="*50)
     USERCHOICE = int(input ("Your choice please :"))
@@ -58,9 +58,9 @@ def ADD_NEW(listname,listgrade):
                     
                     # verification if grade is number :
                     try :
-                         value = int (input("ENTER grade :"))
+                         value = float (input("ENTER grade :"))
                     except ValueError:
-                        print ("unaccepted grade must be integer !")
+                        print ("unaccepted grade must be a value!")
                         continue
                 
                     # IF GRADE WAS ILLOGIC DONT ADD IT TO THE LIST OF GRADES :
@@ -89,6 +89,11 @@ def ADD_NEW(listname,listgrade):
 # [2]show all students function :
 
 def SHOW_ALL(listname,listgrade):
+    if not STD_NAME:
+         print('='*50)
+         print("Error:No data to show it!")
+         print('='*50)
+         return
     print ("[D] for detail list")
     print ("[Q] for Quick list ")
     choice = input("ENTER [D]OR [Q] : ")
@@ -398,7 +403,7 @@ def SAVE_DATA(listname,listgrade):
                                 # FORMAT ALI|12|14|15
                 line = f"{name}|{grades[0]}|{grades[1]}|{grades[2]}"
                 file.write(line + "\n") # Add new line 
-                print (f"Success : saved {len(listname)} to '{file_name}'")
+            print (f"Success : saved {len(listname)} to '{file_name}'")
      except Exception as e :
         print (f"Error: cold not save file .reason {e}")
 # Calling all the functions:
